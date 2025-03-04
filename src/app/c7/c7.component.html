@@ -1,0 +1,9 @@
+<ul>
+    <!-- un bucle for que llega en angular 17-->
+    @for(socio of listaSocios; track socio.nombre) {
+    <li>{{ socio.nombre }} {{ socio.apellidos }} {{ socio.edad }}</li>
+    } @empty {
+    <li>no hay socios</li>
+    }
+  </ul>
+  

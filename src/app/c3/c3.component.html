@@ -1,0 +1,8 @@
+<ul>
+    <!-- un bucle for que llega en angular 17-->
+    @for(nombre of listaNombres; track nombre) {
+        <li>{{nombre}}</li>
+        } @empty {
+        <li>no hay items</li>
+        }
+    </ul>
