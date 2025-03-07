@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { LibroRestService } from '../libro-rest.service';
 import { Libro } from '../libro';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-listalibros',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './listalibros.component.html',
   styleUrl: './listalibros.component.scss'
 })

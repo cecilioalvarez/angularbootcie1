@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 import { ListalibrosComponent } from './listalibros/listalibros.component';
 import { FormularioLibroComponent } from './formulario-libro/formulario-libro.component';
@@ -7,7 +7,7 @@ import { FormularioLibroComponent } from './formulario-libro/formulario-libro.co
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet
-    ,ListalibrosComponent,FormularioLibroComponent],
+    ,ListalibrosComponent,FormularioLibroComponent,RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
