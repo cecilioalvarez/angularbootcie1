@@ -1,0 +1,12 @@
+<table class="table">
+    @for(ejemplar of listaEjemplar; track ejemplar.isbn) {
+        <tr>
+            <td>{{ejemplar.isbn}}</td>
+            <td>{{ejemplar.numero}}</td>
+            <td>{{ejemplar.disponible}}</td>
+                    <td><a class="btn-btn-primary" [routerLink]="['/detalleejemplar',ejemplar.isbn, ejemplar.numero]">detalle</a></td>
+                    <td><a class="btn-btn-warning" [routerLink]="['/borrarejemplar',ejemplar.isbn, ejemplar.numero]">borrar</a></td>
+           </tr>
+    }
+</table>
+<a routerLink="/formularioejemplar">ir a formulario</a>
