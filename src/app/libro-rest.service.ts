@@ -21,4 +21,8 @@ export class LibroRestService {
 
          return this.httpClient.post<Libro>("http://localhost:8080/webapi/libros",libro);
    }
+
+   public buscarUno(isbn:String):Observable<Libro> {
+    return this.httpClient.get<Libro>(`http://localhost:8080/webapi/libros/${isbn}`);
+   }
 }

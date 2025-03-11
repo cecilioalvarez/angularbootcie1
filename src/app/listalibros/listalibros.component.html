@@ -5,6 +5,8 @@
             <td>{{ libro.titulo }}</td>
             <td> {{libro.autor}}</td>
             <td> {{libro.paginas}}</td>
+            <td><a class="btn btn-primary" 
+                [routerLink]="['/detallelibro',libro.isbn]">detalle</a></td>
         </tr>
         } 
 </table>
