@@ -20,5 +20,13 @@ export class ListaEjemplarComponent {
       this.listaEjemplar=datos;
     })
   }
+borrar(isbn:string,numero:number){
+  this.ejemplarRestService.borrar(isbn,numero).subscribe((datos)=> {
+    this.ejemplarRestService.buscarTodos().subscribe((datos)=>{
 
+  
+    this.listaEjemplar=datos;
+  })
+})
+}
 }

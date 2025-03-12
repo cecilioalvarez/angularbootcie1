@@ -5,7 +5,7 @@
             <td>{{ejemplar.numero}}</td>
             <td>{{ejemplar.disponible}}</td>
                     <td><a class="btn-btn-primary" [routerLink]="['/detalleejemplar',ejemplar.isbn, ejemplar.numero]">detalle</a></td>
-                    <td><a class="btn-btn-warning" [routerLink]="['/borrarejemplar',ejemplar.isbn, ejemplar.numero]">borrar</a></td>
+                    <td><button class="btn btn-warning" (click)="borrar(ejemplar.isbn,ejemplar.numero)">Borrar</button></td>
            </tr>
     }
 </table>

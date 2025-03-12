@@ -25,9 +25,9 @@ export class EjemplarRestService {
      return this.httpClient.get<Ejemplar>(`http://localhost:8080/webapi/ejemplar/isbn/${isbn}/numero/${numero}`);
    
    }
-   public borrar(ejemplar:Ejemplar):Observable<Ejemplar>{
+   public borrar(isbn:string,numero:number):Observable<Ejemplar>{
    
-    return this.httpClient.delete<Ejemplar>(`http://localhost:8080/webapi/ejemplar/isbn/${ejemplar.isbn}/numero/${ejemplar.numero}`);
+    return this.httpClient.delete<Ejemplar>(`http://localhost:8080/webapi/ejemplar/isbn/${isbn}/numero/${numero}`);
    } 
   
   }
