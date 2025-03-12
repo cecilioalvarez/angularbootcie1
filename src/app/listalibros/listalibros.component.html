@@ -6,6 +6,7 @@
             <td>{{ libro.autor}}</td>
             <td>{{ libro.paginas}}</td>
             <td><a class="btn-btn-primary" [routerLink]="['/detallelibro',libro.isbn]">detalle</a></td>
+            <td><input type="button" class="btn btn-primary" value="borrar" (click)="borrar(libro)"></td>
         </tr>
     }
 </table>
