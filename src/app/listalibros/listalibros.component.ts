@@ -20,5 +20,15 @@ export class ListalibrosComponent {
         this.listaLibros=datos;
     })
   }
+  borrar(libro:Libro) {
+
+    this.libroRestService.borrar(libro).subscribe((datos)=> {
+
+        this.libroRestService.buscarTodos().subscribe((datos)=> {
+
+          this.listaLibros=datos;
+        })
+    })
+  }
 
 }
