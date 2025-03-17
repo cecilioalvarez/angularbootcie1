@@ -9,6 +9,7 @@ import { C6Component } from './c6/c6.component';
 import { C7Component } from './c7/c7.component';
 import { ListalibrosComponent } from './listalibros/listalibros.component';
 import { FormularioLibroComponent } from './formulario-libro/formulario-libro.component';
+import { C8Component } from './c8/c8.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,7 @@ import { FormularioLibroComponent } from './formulario-libro/formulario-libro.co
     C2Component,
     C3Component,
     C4Component,
-    C5Component,C6Component,C7Component,ListalibrosComponent,FormularioLibroComponent],
+    C5Component,C6Component,C7Component,ListalibrosComponent,FormularioLibroComponent,C8Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

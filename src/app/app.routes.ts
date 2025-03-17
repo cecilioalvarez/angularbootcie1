@@ -3,11 +3,13 @@ import { ListalibrosComponent } from './listalibros/listalibros.component';
 import { FormularioLibroComponent } from './formulario-libro/formulario-libro.component';
 import { DetalleLibroComponent } from './detalle-libro/detalle-libro.component';
 import { ListaEjemplarComponent } from './listaejemplar/lista-ejemplar.component';
+import { C8Component } from './c8/c8.component';
 
 export const routes: Routes = [
     {path:"listalibros",component:ListalibrosComponent},
     {path:"formulariolibros",component:FormularioLibroComponent},
     {path:"detallelibro/:isbn",component:DetalleLibroComponent},
-    {path:"", component:ListaEjemplarComponent},
+    {path:"", component:C8Component},
     {path:"formularioejemplar",component:FormularioLibroComponent}
+
 ];
