@@ -1,0 +1,24 @@
+<form >
+
+    <div>
+        <label for="nombre">Nombre</label>
+   
+    </div>
+    <div>
+
+        <input type="text" class="form-control" [(ngModel)]="nombre" name="nombre" id="nombre" placeholder="introduce nombre"/>
+    </div>
+    <div>
+        <label for="clave">clave</label>
+   
+    </div>
+   <div>
+   <input class="form-control"  [(ngModel)]="clave" type="password" name="clave" id="clave" placeholder="introduce la clave"/>
+</div>
+<div>
+    <input class="btn btn-primary" type="submit" name="login" (click)="validar()"/>
+
+</div>
+    
+
+</form>
